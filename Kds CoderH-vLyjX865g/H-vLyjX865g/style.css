@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: campton;
+    src: url(CamptonExtraBold.otf);
+}
+
+:root {
+    --color1: #d8a787;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    background: var(--color1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #917563;
+    display: flex;
+}
+
+header .left-side, .right-side {
+    width: 70%;
+    height: 100%;
+    background: #1e1e1e;
+    border-radius: 20px 36% 34% 20px;
+}
+
+header .right-side {
+    width: 30%;
+    height: 100%;
+    border-radius: 47% 20px 20px 45%;
+}
+
+header .main_watch {
+    position: absolute;
+    right: 17%;
+    top: 12.7%;
+    filter: drop-shadow(0px 0px 1px #000);
+}
+
+
+header .left-side nav {
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+header .left-side nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+header .left-side nav ul li {
+    padding-left: 30px;
+}
+
+header .left-side nav ul li a {
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+    font-size: 10px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+header .left-side nav ul li a:hover {
+    color: #fff;
+}
+
+header .left-side nav .logo {
+    font-size: 12px;
+    display: flex;
+    margin-top: 4px;
+}
+
+header .left-side  section {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    /* border: 1px solid #fff; */
+    display: flex;
+}
+header .left-side  section .social , .content{
+    height: 100%;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    overflow: none;
+}
+
+header .left-side  section  .content{
+    margin-left: 15%;
+}
+header .left-side  section  .content h1{
+    font-size: 108px;
+    line-height: 80px;
+    font-family: campton;
+}
+
+header .left-side section .content svg{
+    height: 100px;
+}
+header .left-side section .content svg text{
+    font-size: 100px;
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #1e1e1e;
+    -webkit-text-fill-color: #1e1e1e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    animation: effects 4s linear forwards;
+     fill: transparent;
+    stroke: #fff;
+    stroke-width: 1px;
+    border: 1px solid #fff;
+}
+
+@keyframes effects {
+    0% {
+        stroke-dasharray: 0 70%;
+    }
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: 10%;
+    }
+}
+header .left-side section .content h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header .left-side section .social a{
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+    font-size: 12px;
+    padding: 8px 0px;
+    transform: rotate(-90deg);
+}
+header .left-side section .social a:nth-child(2){
+   color: #fff;
+}
+
+header footer {
+    width: 90%;
+    height: 20%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    overflow: hidden;
+}
+
+header footer .ex_img {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+header footer .ex_img h4 {
+    color: #fff;
+    height: 20px;
+    color: rgb(167, 167, 167);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+header footer .ex_img h4 img{
+    width: 11px;
+    margin:0px 0px 2px 5px;
+}
+
+header footer .ex_img .img{
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    bottom: 0px;
+    left: 18%;
+    transition: 2.3s linear;
+}
+
+header .right-side {
+    border: 1px solid transparent;
+}
+
+header .right-side ul {
+    list-style-type: none;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .right-side ul li{
+    position: relative;
+    padding: 0px 0px 0px 30px;
+}
+header .right-side ul li a{
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+    font-size: 10px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+header .right-side ul li a:hover{
+    color: #fff;
+}
+header .right-side ul li:nth-child(2) a{
+   position: relative;
+   margin-left: 30px;
+}
+header .right-side ul li:nth-child(2) a::before{
+   content: '';
+   position: absolute;
+   width: 20px;
+   height: 2.5px;
+   border-radius: 20px;
+   background: rgb(167, 167, 167);
+   right: 15px;
+   top: 3px;
+}
+header .right-side ul li:nth-child(2) a::after{
+   content: '';
+   position: absolute;
+   width: 20px;
+   height: 2.5px;
+   border-radius: 20px;
+   background: rgb(167, 167, 167);
+   right: 15px;
+   top: 9px;
+}
+
+header .right-side section {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .right-side section .bx {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid rgb(167, 167, 167); */
+    margin-top: 50px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: inset 0px 1px 0px rgb(167, 167, 167),
+    inset 0px -1px 0px rgb(167, 167, 167),
+    inset 1px 0px 0px rgb(167, 167, 167),
+    inset -1px 0px 0px rgb(167, 167, 167);
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+header .right-side section .bx::-webkit-scrollbar {
+  display: none;
+}
+
+header .right-side section .bx img{
+    min-width: 70px;
+    height: 100px;
+    margin: auto 17px;
+    cursor: pointer;
+}
+header .right-side section  .btn_lr {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    color: #ffffff;
+    font-size: 13px;
+    top: 37%;
+    cursor: pointer;
+}
+header .right-side section  #right {
+    top: 75%;
+    right: 33%;
+}
+header .right-side footer{
+    width: 90%;
+    height: 20%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+}
+header .right-side footer h3{
+    width: 25px;
+    height: 25px;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+header .right-side footer h3 span{
+   font-size: 8px;
+   margin:0px 2px 0px 2px;
+}
+header .right-side footer h3 span:nth-child(2){
+   margin-left: 2px;
+}
+
+header .Add_to_cart {
+    position: absolute;
+    right: 26.5%;
+    bottom: 4%;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
